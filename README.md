@@ -27,12 +27,12 @@ TODO: fix the prompt and the number of generated tokens so runs are comparable.
 
 ## Results
 
-| Date | Runtime | Model | Precision | Size | Backend | Prompt (t/s) | Generation (t/s) |
-|---|---|---|---|---|---|---|---|
-| 2026-10-20 | llama.cpp 0.7.0 | gemma-3-1b-it | F16 | 2.01 GB | Metal | 519.1 | 72.0 |
-| | llama.cpp 0.7.0 | gemma-3-1b-it | Q8_0 | 1.07 GB | Metal | TODO | TODO |
-| | llama.cpp 0.7.0 | gemma-3-1b-it | Q4_K_M | 806 MB | Metal | TODO | TODO |
-| | MLX | gemma-3-1b-it | TODO | | Metal | TODO | TODO |
+| Date | Runtime | Model | Precision | Size | Backend | Prompt (t/s) | Generation (t/s) | predicted |
+|---|---|---|---|---|---|---|---|---|
+| 2026-10-20 | llama.cpp 0.7.0 | gemma-3-1b-it | F16 | 2.01 GB | Metal | 519.1 | 72.0 | 100.0 (200/2) |
+| | llama.cpp 0.7.0 | gemma-3-1b-it | Q8_0 | 1.07 GB | Metal | TODO | TODO | 187 | 
+| | llama.cpp 0.7.0 | gemma-3-1b-it | Q4_K_M | 806 MB | Metal | TODO | TODO | 248 | 
+| | MLX | gemma-3-1b-it | TODO | | Metal | TODO | TODO | No size yet |
 
 Single runs so far; final numbers will be the median of 5+ runs after a warm-up.
 
